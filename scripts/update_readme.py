@@ -32,7 +32,7 @@ def add_exercise_to_readme(category, exercise_number, exercise_name, difficulty,
     
     # Create the new exercise line with a link
     exercise_name_with_link = f"[{exercise_name}]({exercise_link})"
-    solution_link = f"[Here](./{category}/{exercise_name})"
+    solution_link = f"[Here](./{category}/{exercise_name.replace(' ', '')})"
     new_exercise_line = f"| {exercise_number} | {exercise_name_with_link} | {difficulty} | {solution_link} |\n"
     
     # Insert the new exercise line
